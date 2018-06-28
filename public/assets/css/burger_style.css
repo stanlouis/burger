@@ -1,0 +1,29 @@
+body {
+    background-color: #F7CB50;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #F0E1BE;
+    height: 3rem;
+    line-height: 30px;
+    font-size: 1.15rem;
+}
+
+#burger-img {
+    width: 30%;
+    height: 30%;
+}

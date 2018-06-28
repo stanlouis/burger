@@ -1,36 +1,40 @@
-<h1 class="text-center">Eat-Da-Burger!</h1>
+<h1 class="text-center mt-5">Eat-Da-Burger!</h1>
 
 <main>
     <div class="container">
         <div class="row">
             <div class="col md-6">
-                <h1>Burgers to be devoured</h1>
-                {{#each burgers}}
-                    {{#unless this.devoured}}
-                        <div class='burgerToBeEaten'>
-                            <div>
-                                {{id}}.
-                                {{burger_name}}
-                                <button class="change-status" data-id="{{id}}">Devour it!</button>
-                            </div>
+                <h2>Burgers to be devoured</h2>
+                {{#each burgers}} {{#unless this.devoured}}
+                <div class='burgerToBeEaten'>
+                    <div>
+                        <ul>
+                            <li>
+                                {{id}}. {{burger_name}}
+                                <button class="change-status float-right" data-id="{{id}}">Devour it!</button>
+                            </li>
+                        </ul>
 
-                        </div>
-                    {{/unless}}
-                {{/each}}
+                    </div>
+
+                </div>
+                {{/unless}} {{/each}}
             </div>
 
             <div class="col md-6">
-                <h1>Burgers not yet devoured</h1>
-                {{#each burgers}}
-                    {{#if this.devoured}}
-                        <div class='burgerEaten'>
-                            <div>
-                                {{this.id}}.
-                                {{this.burger_name}}
-                            </div>
-                        </div>
-                    {{/if}}
-                {{/each}}
+                <h2>Burgers already devoured</h2>
+                {{#each burgers}} {{#if this.devoured}}
+                <div class='burgerEaten'>
+                    <div>
+                        <ul>
+                            <li>
+                                 {{id}}. {{burger_name}}
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                {{/if}} {{/each}}
             </div>
         </div>
 
@@ -51,4 +55,3 @@
 
     </div>
 </main>
-
