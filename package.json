@@ -13,15 +13,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.14.2",
-    "dotenv": "^6.0.0",
-    "express": "^4.13.3",
-    "express-handlebars": "3.0.0",
-    "mysql": "^2.10.2"
-  },
   "bugs": {
     "url": "https://github.com/stanlouis/burger/issues"
   },
-  "homepage": "https://github.com/stanlouis/burger#readme"
+  "homepage": "https://github.com/stanlouis/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0"
+  }
 }
